@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    height: 100vh;
+    width: 200vh;
+}
+
+.box{
+    width: 20vh;
+    height: 60vh;
+    border-radius: 0.5rem;
+    background-color: rgb(117, 117, 235);
+    overflow: hidden;
+    transform: translate3d(0,0,0);
+    min-width: 20rem;
+    min-height: 35rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.fa-street-view{
+    animation: rotates 1s linear infinite alternate;
+}
+
+@keyframes rotates{
+    from{
+        transform: translateX(-0.4rem);
+    }
+    to{
+        transform: translateX(0.4rem);
+    }
+}
+
